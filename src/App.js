@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Countdown from "./components/Countdown";
+import Footer from "./components/footer/Footer";
+import Header from "./components/nav/Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <section className="flex flex-col justify-center">
+        <div className="flex justify-center m-8">
+          <p className="sm:text-3xl text-lg font-bold">We are coming soon</p>
+        </div>
+        <Countdown />
+      </section>
+      <Footer />
+    </>
   );
 }
 
